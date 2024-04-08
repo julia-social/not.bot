@@ -55,11 +55,14 @@
         height: auto; /* Maintains aspect ratio */
         padding: 0 20px; /* Add desired padding */
         box-sizing: border-box; /* Includes padding in the element's total width */
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div style="display:flex;justify-content: center;">
       <svg
         width="707"
         height="156"
@@ -80,7 +83,7 @@
           stroke-width="20"
         />
       </svg>
-
+    </div>
       <div class="tagline">
         <svg
           width="654"
@@ -167,7 +170,8 @@
           />
         </svg>
       </div>
-      <form class="flex gap-4 w-full" onsubmit="handleSubmit(event)">
+      
+      <form class="flex gap-4 w-full p-5" onsubmit="handleSubmit(event)">
         <input
           type="email"
           name="email"
