@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    @font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Custom Properties */
+:root {
+  --color-notbot-primary: #3386fc;
+  --color-honestbot-primary: #02bc5f;
+  --color-dark-blue: #262649;
+  --color-light-grey: #ebebed;
+  --color-dark-grey: #676767;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Secondary/Accent Colors */
+  --color-pink: #ee2677;
+  --color-purple: #45006d;
+  --color-cyan: #1affd5;
+  --color-dark-cyan: #065560;
+  --color-orange: #ff931d;
+  --color-teal: #065560;
+  --color-green: #68aa00;
+
+  --font-family-primary: "Montserrat", Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 60px;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+    #container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    p{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    a{
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .package-entry {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    .package-title, .package-link, .package-entry {
+      text-wrap: wrap;
+      width: 100%;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>Attribution</h2>
+  </div>
+  <script>
+    const csvData = 
+    
+    `
+    Subtitle,Flutter
+    app_links,https://github.com/llfbandit/app_links/blob/master/LICENSE
+clock, https://github.com/dart-lang/tools/blob/main/pkgs/clock/LICENSE
+cupertino_icons, https://github.com/flutter/packages/blob/main/third_party/packages/cupertino_icons/LICENSE
+deep_pick, https://github.com/passsy/deep_pick/blob/main/LICENSE
+dio, https://github.com/cfug/dio/blob/main/dio/LICENSE
+drift, https://github.com/simolus3/drift/blob/develop/LICENSE
+sqlite3, https://github.com/simolus3/sqlite3.dart/blob/main/sqlite3/LICENSE
+font_awesome_flutter, https://github.com/fluttercommunity/font_awesome_flutter/blob/master/LICENSE
+flutter_rust_bridge, https://github.com/fzyzcjy/flutter_rust_bridge/blob/master/LICENSE
+flutter_slidable, https://github.com/letsar/flutter_slidable/blob/master/LICENSE
+flutter_svg, https://github.com/flutter/packages/blob/main/third_party/packages/flutter_svg/LICENSE
+go_router, https://github.com/flutter/packages/blob/main/packages/go_router/LICENSE
+image_picker, https://github.com/flutter/packages/blob/main/packages/image_picker/image_picker/LICENSE
+path, https://github.com/dart-lang/core/blob/main/pkgs/path/LICENSE
+path_provider, https://github.com/flutter/packages/blob/main/packages/path_provider/path_provider/LICENSE
+platform, https://github.com/dart-lang/core/blob/main/pkgs/platform/LICENSE
+qr, https://github.com/kevmoo/qr.dart/blob/master/LICENSE
+qr_flutter, https://github.com/theyakka/qr.flutter/blob/master/LICENSE
+shared_preferences, https://github.com/flutter/packages/blob/main/packages/shared_preferences/shared_preferences/LICENSE
+camera, https://github.com/flutter/packages/blob/main/packages/camera/camera/LICENSE
+riverpod, https://github.com/rrousselGit/riverpod/blob/master/LICENSE
+flutter_riverpod, https://github.com/rrousselGit/riverpod/blob/master/LICENSE
+scan, https://github.com/flutter-package/flutter_scan/blob/main/LICENSE
+cbor, https://github.com/shamblett/cbor/blob/master/LICENSE
+flutter_staggered_grid_view, https://github.com/letsar/flutter_staggered_grid_view/blob/master/LICENSE
+flutter_linkify, https://github.com/Cretezy/flutter_linkify/blob/master/LICENSE
+url_launcher, https://github.com/flutter/packages/blob/main/packages/url_launcher/url_launcher/LICENSE
+in_app_purchase, https://github.com/flutter/packages/blob/main/packages/in_app_purchase/in_app_purchase/LICENSE
+package_info_plus, https://github.com/fluttercommunity/plus_plugins/blob/main/packages/package_info_plus/package_info_plus/LICENSE
+flutter_secure_storage, https://github.com/juliansteenbakker/flutter_secure_storage/blob/develop/flutter_secure_storage/LICENSE
+secure_enclave, https://github.com/anggaaryas/flutter-secure-enclave/blob/main/LICENSE
+typed_data, https://github.com/dart-lang/core/blob/main/pkgs/typed_data/LICENSE
+equatable, https://github.com/felangel/equatable/blob/master/LICENSE
+faker, https://github.com/drager/faker/blob/master/LICENSE
+share_plus, https://github.com/fluttercommunity/plus_plugins/blob/main/packages/share_plus/share_plus/LICENSE
+local_auth, https://github.com/flutter/packages/blob/main/packages/local_auth/local_auth/LICENSE
+intl, https://github.com/dart-lang/i18n/blob/main/pkgs/intl/LICENSE
+shimmer, https://github.com/hnvn/flutter_shimmer/blob/master/LICENSE
+image, https://github.com/brendan-duncan/image/blob/main/LICENSE
+uuid, https://github.com/daegalus/dart-uuid/blob/main/LICENSE
+keyboard_actions, https://github.com/diegoveloper/flutter_keyboard_actions/blob/master/LICENSE
+super_clipboard, https://github.com/superlistapp/super_native_extensions/blob/main/super_clipboard/LICENSE
+super_tooltip, https://github.com/bensonarafat/super_tooltip/blob/master/LICENSE
+cryptography, https://github.com/dint-dev/cryptography/blob/master/LICENSE
+showcaseview, https://github.com/SimformSolutionsPvtLtd/flutter_showcaseview/blob/master/LICENSE
+bs58, https://github.com/litaoh/base58/blob/master/LICENSE
+flutter_inappwebview, https://github.com/pichillilorenzo/flutter_inappwebview/blob/master/LICENSE
+wakelock_plus, https://github.com/fluttercommunity/wakelock_plus/blob/main/wakelock_plus/LICENSE
+sqlcipher_flutter_libs, https://github.com/simolus3/sqlite3.dart/blob/main/sqlcipher_flutter_libs/LICENSE
+Subtitle,Rust
+aes, https://github.com/RustCrypto/block-ciphers/blob/master/aes/LICENSE-APACHE
+aes-gcm, https://github.com/RustCrypto/AEADs/blob/master/aes-gcm/LICENSE-APACHE
+android_logger, https://github.com/rust-mobile/android_logger-rs/blob/master/LICENSE-APACHE
+argon2, https://github.com/RustCrypto/password-hashes/blob/master/argon2/LICENSE-APACHE
+arrayvec, https://github.com/bluss/arrayvec/blob/master/LICENSE-APACHE
+async-trait, https://github.com/dtolnay/async-trait/blob/master/LICENSE-APACHE
+base64, https://github.com/marshallpierce/rust-base64/blob/master/LICENSE-APACHE
+bc-envelope, https://github.com/BlockchainCommons/bc-envelope-rust/blob/master/LICENSE.md
+bigdecimal, https://github.com/akubera/bigdecimal-rs/blob/trunk/LICENSE-APACHE
+bincode, https://git.sr.ht/~stygianentity/bincode/tree/v2.0.1/item/LICENSE.md
+bip39, https://github.com/rust-bitcoin/rust-bip39/blob/master/LICENSE
+blake3, https://github.com/BLAKE3-team/BLAKE3/blob/master/LICENSE_A2
+blst, https://github.com/supranational/blst/blob/master/LICENSE
+bristol-fashion, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+brotli, https://github.com/dropbox/rust-brotli/blob/master/LICENSE.MIT
+bs58, https://github.com/Nullus157/bs58-rs/blob/main/LICENSE-APACHE
+bumpalo, https://github.com/fitzgen/bumpalo/blob/main/LICENSE-APACHE
+bytemuck, https://github.com/Lokathor/bytemuck/blob/main/LICENSE-APACHE
+cc, https://github.com/rust-lang/cc-rs/blob/main/LICENSE-APACHE
+chacha20poly1305, https://github.com/RustCrypto/AEADs/blob/master/chacha20poly1305/LICENSE-APACHE
+clap, https://github.com/clap-rs/clap/blob/master/LICENSE-APACHE
+clvm_tools_rs, https://github.com/Chia-Network/clvm_tools_rs/blob/main/LICENSE
+clvmr, https://github.com/Chia-Network/clvm_rs/blob/main/LICENSE
+cookie, https://github.com/rwf2/cookie-rs/blob/master/LICENSE-APACHE
+criterion, https://github.com/bheisler/criterion.rs/blob/master/LICENSE-APACHE
+crossbeam-queue, https://github.com/crossbeam-rs/crossbeam/blob/master/LICENSE-APACHE
+crypto-bigint, https://github.com/RustCrypto/crypto-bigint/blob/master/LICENSE-APACHE
+curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek/blob/main/curve25519-dalek/LICENSE
+dashmap, https://github.com/xacrimon/dashmap/blob/master/LICENSE
+deflate, https://github.com/image-rs/deflate-rs/blob/dev/LICENSE-APACHE
+dg_xch_cli, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dg_xch_clients, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dg_xch_core, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dg_xch_keys, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dg_xch_macros, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dg_xch_serialize, https://github.com/GalactechsLLC/dg_xch_utils/blob/main/LICENSE
+dialoguer, https://github.com/console-rs/dialoguer/blob/master/LICENSE
+eyre, https://github.com/eyre-rs/eyre/blob/master/LICENSE-APACHE
+fancy-garbling,https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+fancy-garbling-base-conversion, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+ff,	https://github.com/GaloisInc/ff/blob/main/LICENSE-APACHE
+ff_codegen,	https://github.com/GaloisInc/ff/blob/main/LICENSE-APACHE
+flutter_rust_bridge,https://github.com/fzyzcjy/flutter_rust_bridge/blob/master/LICENSE
+futures-util, https://github.com/rust-lang/futures-rs/blob/master/LICENSE-APACHE
+generic-array,	https://github.com/fizyk20/generic-array/blob/master/LICENSE
+hex	, https://github.com/KokaKiwi/rust-hex/blob/main/LICENSE-APACHE
+http, https://github.com/hyperium/http/blob/master/LICENSE-APACHE
+http-body, https://github.com/hyperium/http-body/blob/master/LICENSE
+http-body-util, https://github.com/hyperium/http-body/blob/master/LICENSE
+hyper, https://github.com/hyperium/hyper/blob/master/LICENSE
+hyper-util, https://github.com/hyperium/hyper-util/blob/master/LICENSE
+image, https://github.com/image-rs/image/blob/main/LICENSE-APACHE
+itertools, https://github.com/rust-itertools/itertools/blob/master/LICENSE-APACHE
+jsonwebtoken, https://github.com/Keats/jsonwebtoken/blob/master/LICENSE
+keyed_arena, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+lazy_static, https://github.com/rust-lang-nursery/lazy-static.rs/blob/master/LICENSE-APACHE
+lifehash, https://github.com/GalactechsLLC/lifehash-rs
+log, https://github.com/rust-lang/log/blob/master/LICENSE-APACHE
+mime_guess, https://github.com/abonander/mime_guess/blob/master/LICENSE
+ndarray, https://github.com/rust-ndarray/ndarray/blob/master/LICENSE-APACHE
+nix, https://github.com/nix-rust/nix/blob/master/LICENSE
+notify,	https://github.com/notify-rs/notify
+num-bigint,	https://github.com/rust-num/num-bigint/blob/master/LICENSE-APACHE
+num-traits,	https://github.com/rust-num/num-traits/blob/master/LICENSE-APACHE
+num_cpus, https://github.com/seanmonstar/num_cpus/blob/master/LICENSE-APACHE
+ocelot, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+once_cell, https://github.com/matklad/once_cell/blob/master/LICENSE-APACHE
+oslog, https://github.com/steven-joruk/oslog/blob/master/LICENSE
+p256, https://github.com/RustCrypto/elliptic-curves/blob/master/p256/LICENSE-APACHE
+petname, https://github.com/allenap/rust-petname/blob/master/LICENSE
+portfu,	https://github.com/galactechsllc/portfu
+portfu_admin,	https://github.com/galactechsllc/portfu
+portfu_core,	https://github.com/galactechsllc/portfu
+portfu_macros,	https://github.com/galactechsllc/portfu
+prettyplease, https://github.com/dtolnay/prettyplease/blob/master/LICENSE-APACHE
+proc-macro2, https://github.com/dtolnay/proc-macro2/blob/master/LICENSE-APACHE
+proptest, https://github.com/proptest-rs/proptest/blob/main/LICENSE-APACHE
+prometheus,	https://github.com/tikv/rust-prometheus/blob/master/LICENSE
+qrcode,	https://github.com/kennytm/qrcode-rust/blob/master/LICENSE-APACHE.txt
+quick-xml, https://github.com/tafia/quick-xml/blob/master/LICENSE-MIT.md
+quote, https://github.com/dtolnay/quote/blob/master/LICENSE-APACHE
+rand, https://github.com/rust-random/rand/blob/master/LICENSE-APACHE
+rand_chacha, https://github.com/rust-random/rand/blob/master/rand_chacha/LICENSE-APACHE
+rand_core, https://github.com/rust-random/rand/blob/master/rand_core/LICENSE-APACHE
+regex, https://github.com/rust-lang/regex/blob/master/LICENSE-APACHE
+reqwest, https://github.com/seanmonstar/reqwest/blob/master/LICENSE-APACHE
+rqrr, https://github.com/WanzenBug/rqrr/blob/master/LICENSE-APACHE
+rsa, https://github.com/RustCrypto/RSA/blob/master/LICENSE-APACHE
+rustls, https://github.com/rustls/rustls/blob/main/LICENSE-APACHE
+rustls-pemfile,	https://github.com/rustls/pemfile/blob/main/LICENSE-APACHE
+scuttlebutt, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+serde, https://github.com/serde-rs/serde/blob/master/LICENSE-APACHE
+serde_html_form	, https://github.com/jplatte/serde_html_form/blob/main/LICENSE
+serde_json, https://github.com/serde-rs/json/blob/master/LICENSE-APACHE
+serde_regex, https://github.com/tailhook/serde-regex/blob/master/LICENSE-APACHE
+serde_yaml, https://github.com/dtolnay/serde-yaml/blob/master/LICENSE-APACHE
+sha2, https://github.com/RustCrypto/hashes/blob/master/sha2/LICENSE-APACHE
+sha3, https://github.com/RustCrypto/hashes/blob/master/sha3/LICENSE-APACHE
+simple_logger, https://github.com/borntyping/rust-simple_logger/blob/main/LICENSE
+smallvec, https://github.com/servo/rust-smallvec/blob/v2/LICENSE-APACHE
+sqlx, https://github.com/launchbadge/sqlx/blob/main/LICENSE-APACHE
+sqids, https://github.com/sqids/sqids-rust/blob/main/LICENSE
+struct-field-names-as-array, https://github.com/jofas/struct_field_names_as_array/blob/master/LICENSE
+subtle, https://github.com/dalek-cryptography/subtle/blob/main/LICENSE
+swanky-aes-rng, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-channel,	https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field-binary, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field-f61p, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field-ff-primes, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field-fft, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-field-test, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-polynomial, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+swanky-serialization, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+syn, https://github.com/dtolnay/syn/blob/master/LICENSE-APACHE
+tempfile, https://github.com/Stebalien/tempfile/blob/master/LICENSE-APACHE
+thiserror, https://github.com/dtolnay/thiserror/blob/master/LICENSE-APACHE
+time, https://github.com/time-rs/time/blob/main/LICENSE-Apache
+tokio, https://github.com/tokio-rs/tokio/blob/master/LICENSE
+tokio-rustls, https://github.com/rustls/tokio-rustls/blob/main/LICENSE-APACHE
+tokio-tungstenite, https://github.com/snapview/tokio-tungstenite/blob/master/LICENSE
+tokio-util, https://github.com/tokio-rs/tokio/blob/master/LICENSE
+url, https://github.com/servo/rust-url/blob/main/LICENSE-APACHE
+uuid, https://github.com/uuid-rs/uuid/blob/main/LICENSE-APACHE
+vectoreyes, https://github.com/GaloisInc/swanky/blob/dev/LICENSE
+webpki-roots, https://github.com/rustls/webpki-roots/blob/main/LICENSE-APACHE
+x509-cert, https://github.com/RustCrypto/formats/blob/master/x509-cert/LICENSE-APACHE
+x509-parser, https://github.com/rusticata/x509-parser/blob/master/LICENSE-APACHE
+zip, https://github.com/zip-rs/zip2/blob/master/LICENSE
+zstd, https://github.com/gyscos/zstd-rs/blob/main/LICENSE
+zxing-cpp, https://github.com/zxing-cpp/zxing-cpp/blob/master/LICENSE
+`;
+
+   const container = document.getElementById("container");
+
+    csvData.split("\n").forEach(row => {
+      const [title, url] = row.split(",");
+
+      if (title.trim().toLowerCase() === "subtitle") {
+        // 🔹 Render dynamic subtitle
+        const subtitleEl = document.createElement("div");
+        subtitleEl.className = "subtitle";
+        subtitleEl.textContent = url ? url.trim() : "Untitled Section";
+        container.appendChild(subtitleEl);
+      } else {
+        // 🔹 Normal package + link
+        const div = document.createElement("div");
+        div.className = "package-entry";
+
+        const p = document.createElement("p");
+        p.className = "package-title";
+        p.textContent = title.trim();
+        div.appendChild(p);
+
+        if (url && url.trim()) {
+          const a = document.createElement("a");
+          a.href = url.trim();
+          a.className = "package-link";
+          a.textContent = url.trim();
+          div.appendChild(a);
+        }
+
+        container.appendChild(div);
+      }
+    });
+  </script>
+</body>
+</html>
