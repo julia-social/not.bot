@@ -157,14 +157,14 @@
                 <label for="waitlist-email">Join Waitlist</label>
                 <div class="form-group">
                     <input type="email" id="waitlist-email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Join Waitlist</button>
+                    <button id="waitlist-submit" type="submit">Join Waitlist</button>
                 </div>
             </form>
             <form class="signup-form" id="newsletter-form">
                 <label for="newsletter-email">Newsletter</label>
                 <div class="form-group">
                     <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                    <button id="newsletter-submit" type="submit">Subscribe</button>
                 </div>
             </form>
         </div>
@@ -254,6 +254,116 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-message" id="modalMessage"></div>
+            <button class="modal-close" id="modalClose">OK</button>
+        </div>
+    </div>
+    <script>
+        // Email validation
+        function isValidEmail(email) {
+            return email.includes('@') && email.includes('.') && email.trim() !== '';
+        }
+
+        const modal = document.getElementById('modal');
+        const modalMessage = document.getElementById('modalMessage');
+        const modalClose = document.getElementById('modalClose');
+
+        // Modal close
+        modalClose.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // WaitList Form handling
+        const waitListInput = document.getElementById('waitlist-email');
+        const waitListSubmitBtn = document.getElementById('waitlist-submit');
+        const waitListSignupForm = document.getElementById('waitlist-form');
+
+        // Enable/disable submit button based on input
+        waitListInput.addEventListener('input', function() {
+            const email = this.value.trim();
+            waitListSubmitBtn.disabled = !isValidEmail(email);
+        });
+
+        // WaitList Form submission
+        waitListSignupForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = waitListInput.value.trim();
+            if (!isValidEmail(email)) {
+                return;
+            }
+            waitListSubmitBtn.disabled = true;
+            waitListSubmitBtn.textContent = 'Submitting...';
+            try {
+                const formData = new FormData();
+                formData.append('email', email);
+                const response = await fetch('https://not-bot-referral-form.restless-unit-5918.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    modalMessage.textContent = 'Subscribed. Welcome to Not.Bot!';
+                    waitListInput.value = '';
+                } else {
+                    modalMessage.textContent = 'Failed to subscribe. Please try again later.';
+                }
+            } catch (error) {
+                modalMessage.textContent = 'Failed to subscribe. Please try again later.';
+            }
+            modal.style.display = 'block';
+            waitListSubmitBtn.disabled = !isValidEmail(waitListInput.value.trim());
+            waitListSubmitBtn.textContent = 'Submit';
+        });
+
+        // Newsletter Form handling
+        const newsletterInput = document.getElementById('newsletter-email');
+        const newsletterSubmitBtn = document.getElementById('newsletter-submit');
+        const newsletterSignupForm = document.getElementById('newsletter-form');
+
+        // Enable/disable submit button based on input
+        newsletterInput.addEventListener('input', function() {
+            const email = this.value.trim();
+            newsletterSubmitBtn.disabled = !isValidEmail(email);
+        });
+
+        // Form submission
+        newsletterSignupForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = newsletterInput.value.trim();
+            if (!isValidEmail(email)) {
+                return;
+            }
+            newsletterSubmitBtn.disabled = true;
+            newsletterSubmitBtn.textContent = 'Submitting...';
+            try {
+                const formData = new FormData();
+                formData.append('email', email);
+                const response = await fetch('https://not-bot-email-form.restless-unit-5918.workers.dev', {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    modalMessage.textContent = 'Subscribed. Welcome to Not.Bot!';
+                    newsletterInput.value = '';
+                } else {
+                    modalMessage.textContent = 'Failed to subscribe. Please try again later.';
+                }
+            } catch (error) {
+                modalMessage.textContent = 'Failed to subscribe. Please try again later.';
+            }
+            modal.style.display = 'block';
+            newsletterSubmitBtn.disabled = !isValidEmail(newsletterInput.value.trim());
+            newsletterSubmitBtn.textContent = 'Submit';
+        });
+    </script>
 </footer>
 
 <script type="text/javascript">
