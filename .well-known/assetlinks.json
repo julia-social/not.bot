@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "social.julia.notbot.app",
+      "sha256_cert_fingerprints":
+      [
+        "6F:67:88:21:03:CB:51:85:6A:3F:B4:08:0B:CC:DB:AA:AA:A6:F5:D8:B0:93:75:CA:C8:2F:9D:0B:9D:BF:CA:76",
+        "88:9D:2E:70:4A:0A:C5:D9:64:5D:34:86:84:00:67:FA:AB:4E:75:96:2F:54:18:48:6D:85:DD:C8:06:0B:EA:91"
+      ]
+    }
+  }
+]
