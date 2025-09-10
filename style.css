@@ -372,6 +372,67 @@ body {
   .hero-image.large {
     max-width: 100%;
   }
+  .hero-content h1{
+    position: relative !important;
+  }
+  .home-use-cases .carousel-track{
+    justify-content: center !important;
+  }
+  .signup-band {
+    padding: 20px;
+  }
+  .signup-form input[type="email"]{
+    width: 100%;
+  }
+  .benefit-block.benefit-block-center-only{
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .benefit-block.benefit-block-with-icon{
+    margin-bottom: 0px;
+  }
+  .to-sign-video{
+    display: flex !important;
+    flex-direction: column;
+  }
+  .verified-creator .feature-block{
+    align-items: baseline !important;
+  }
+  .footer .signup-form button{
+    min-width: 160px;
+  }
+}
+
+@media screen and (max-width: 1265px) and (min-width: 768px) {
+  .hero-content h1{
+    position: relative !important;
+  }
+  .signup-band {
+    padding: 20px;
+  }
+  .signup-form input[type="email"]{
+    width: 100%;
+  }
+  .verified-creator .feature-block{
+    align-items: baseline !important;
+  }
+ 
+}
+
+@media screen and (max-width: 870px) and (min-width: 768px) {
+  .signup-container{
+    grid-template-columns: 2fr !important;
+    gap: 2rem !important;
+  }
+  .footer .signup-form button {
+    min-width: 160px;
+}
+}
+
+
+
+.signup-band {
+  padding: 20px;
 }
 
 /* Hero Section Updates */
