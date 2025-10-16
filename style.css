@@ -2308,6 +2308,8 @@ body {
 .footer-contact .julia-logo img {
   height: 80px;
   width: auto;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 
 .footer-contact .copyright {
@@ -2324,10 +2326,12 @@ body {
 
 .footer-legal ul {
   list-style: none;
+  padding-left: 0 !important;
 }
 
 .footer-legal li {
   margin-bottom: 10px;
+  line-height: 24px !important;
 }
 
 .footer-legal a {
