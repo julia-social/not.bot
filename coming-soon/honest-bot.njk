@@ -1,0 +1,60 @@
+{% extends "layouts/_base.njk" %}
+{% set title = "Honest.Bot | Not.Bot" %}
+{% set menu = "coming-soon" %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero honestbot-hero flex flex-center">
+        <div class="hero-container">
+            <div class="hero-illustration">
+                <img src="/img/honestbot-logo.png" alt="Name tag line art illustration" class="hero-image"/>
+            </div>
+        </div>
+    </section>
+    <!-- Below-the-fold Content Section -->
+    <section class="content-section">
+        <div
+            class="content-container">
+            <!-- Platypus and Explanation -->
+            <div class="content-block mb-0">
+                <div class="content-text">
+                    <p>
+                        AI Agents will be going out into the world, acting on behalf of their employers, interacting with other AI Agents, web
+                        services and with people. But how will we ever trust the bots?
+                    </p>
+                </div>
+            </div>
+            <div class="emphasis-block honestbot">
+                <div class="emphasis-content">
+                    <h3 class="emphasis-heading">With honest.bot you will know:</h3>
+                    <div class="emphasis-row">
+                        <div class="emphasis-image">
+                            <img src="/img/shield-outline.png" alt="Locked name illustration"/>
+                        </div>
+                        <ul class="objectives-list">
+                            <li>Who is the AI Agent working for?</li>
+                            <li>What was that AI told to do?</li>
+                            <li>What permissions had been granted to the AI agent to do its task?</li>
+                            <li>What AI technology (and technology provider) is running the Agent?</li>
+                        </ul>
+                    </div>
+                    <div class="mt-1">
+                        Julia Social’s innovative new identity technology allows these questions to be answered in a secure, cryptographically
+                        verifiable way. And delegation capabilities allow for multi-agent systems where authorization verifiably flows from
+                        human to an orchestrator to specialized agents to the MCP tools, A2A external agents and even humans.
+                    </div>
+                    <div class="text-xl mt-2 text-honestbot italics">
+                        Watch this space for more information as we get closer to the release of honest.bot!
+                    </div>
+                </div>
+            </div>
+            <div class="quote-block">
+                <blockquote>“Julia.social and not.bot's innovative
+                    decentralized identity platform redefines how identity is proven online, enabling secure cooperation and delegation
+                    between humans and AI agents. This groundbreaking approach builds on open standards to create the foundation for
+                    seamless human-AI collaboration.”</blockquote>
+                <div class="font-bold">Kim Hamilton-Duffy</div>
+                <div class="text-sm">Executive Director, Decentralized Identity Foundation</div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
