@@ -1,0 +1,92 @@
+{% extends "layouts/_base.njk" %}
+{% set title = "Not.Bot | B2C" %}
+{% set menu = "coming-soon" %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero b2c">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>not.bot B2C</h1>
+            </div>
+            <div class="hero-illustration">
+                <img src="/img/store-front.png" alt="Name tag line art illustration" class="hero-image large"/>
+            </div>
+            <div class="hero-subheading w-100">
+                <p>Malicious bots are flooding the internet. <br>User-generated content is getting overwhelmed with bot-generated content.
+                    <br><strong>How do you serve your customers and not the bots?</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Below-the-fold Content Section -->
+    <section class="content-section">
+        <div
+            class="content-container">
+            <!-- Platypus and Explanation -->
+            <div class="content-block mb-0">
+                <div class="content-image">
+                    <img src="/img/website-line.png" alt="Platypus line art illustration"/>
+                </div>
+                <div class="content-text">
+                    <p>
+                        People come to your website to interact with others - and get frustrated when they figure out many of the other <strong>“people”</strong>
+                        are bots.
+                    </p>
+                    <p>
+                        New compliance requirements require some sites to prove that their users are <strong>over 13 or over 18</strong>. Sales of some products
+                        require proof that the customer is over 21. Before not.bot, there was no secure and fully privacy-protecting way to get
+                        those proofs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-panel panel-light-grey">
+        <div class="panel-container">
+            <div
+                class="how-it-works-content">
+                <!-- Add to Contacts -->
+                <div class="feature-block feature-left">
+                    <div class="feature-image clean">
+                        <img src="/img/touch-screen.png" alt="Verified Creator Request"/>
+                    </div>
+                    <div class="feature-text">
+                        <h2 class="panel-heading text-left">Easy for users</h2>
+                        <div class="feature-step align-start mb-2">
+                            <div class="feature-number">1</div>
+                            <p>On mobile, users see a “not.bot” button.  Clicking it opens the not.bot app.  On desktop, users see a QR code.  Scanning it opens the not.bot app.</p>
+                        </div>
+                        <div class="feature-step align-start mb-2">
+                            <div class="feature-number">2</div>
+                            <p>The not.bot app opens and shows the name of your website and what information you’re requesting, if any (e.g. “over 18”).  User clicks confirm to send the not.bot.</p>
+                        </div>
+                        <div class="feature-step align-start mb-2">
+                            <div class="feature-number">3</div>
+                            <p>That’s it!  Two clicks on mobile, three on desktop.  And in seconds, you know you’re working with a human</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-block feature-left reverse-mobile">
+                    <div class="feature-text">
+                        <h2 class="panel-heading text-left">Easy for websites</h2>
+                        <div class="feature-step align-start mb-2">
+                            <div class="feature-number">1</div>
+                            <p>Use Keycloak with the Julia Social plugin. No IdP required, not even Julia Social.</p>
+                        </div>
+                        <div class="feature-step align-start mb-2">
+                            <div class="feature-number">2</div>
+                            <p>After a user successfully completes the not.bot proof, a JWT is generated that can be attached to the session to track that the user is not a bot, and has presented the requested credentials.</p>
+                        </div>
+                        <div class="feature-step mb-2">
+                            <div class="feature-number">3</div>
+                            <p>Done!</p>
+                        </div>
+                    </div>
+                    <div class="feature-image clean">
+                        <img src="/img/server.png" alt="Verified Creator Request"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
