@@ -25,29 +25,29 @@
                     <a href="#" class="nav-link active">Products</a>
                     <div class="dropdown-content">
                         <a href="/index.html">not.bot</a>
-                        <a href="/products/reserved_names/index.html">not.bot Reserved Names</a>
-                        <a href="/products/verified_creator/index.html">not.bot Verified Creator</a>
+                        <a href="/products/reserved_names.html">not.bot Reserved Names</a>
+                        <a href="/products/verified_creator.html">not.bot Verified Creator</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link ">Coming Soon</a>
                     <div class="dropdown-content">
-                        <a href="/coming-soon/b2c/index.html">not.bot B2C</a>
-                        <a class="d-none" href="/coming-soon/enterprise/index.html">not.bot Enterprise</a>
-                        <a href="/coming-soon/honest-bot/index.html">honest.bot</a>
+                        <a href="/coming-soon/b2c.html">not.bot B2C</a>
+                        <a class="d-none" href="/coming-soon/enterprise.html">not.bot Enterprise</a>
+                        <a href="/coming-soon/honest-bot.html">honest.bot</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="/technology/index.html" class="nav-link ">Technology</a>
+                    <a href="/technology.html" class="nav-link ">Technology</a>
                 </li>
                 <li class="nav-item d-none">
-                    <a href="/feedback/index.html" class="nav-link">Feedback</a>
+                    <a href="/feedback.html" class="nav-link">Feedback</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://merch.not.bot/" class="nav-link" target="_blank">Merch</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/about/index.html" class="nav-link ">About</a>
+                    <a href="/about.html" class="nav-link ">About</a>
                 </li>
                    <li class="nav-item">
                     <a href="/blog" class="nav-link">Blog</a>
@@ -463,35 +463,35 @@
     </script>
    
 <script>
-    document.addEventListener('mousemove', (e) => {
-        const circles = document.querySelectorAll('.floating-circle');
-        const mouseX = e.clientX / window.innerWidth;
-        const mouseY = e.clientY / window.innerHeight;
-        circles.forEach((circle, index) => {
-            const speed = (index + 1) * 0.5;
-            const x = (mouseX - 0.5) * speed * 20;
-            const y = (mouseY - 0.5) * speed * 20;
-            circle.style.transform = `translate(${x}px, ${y}px)`;
-        });
+document.addEventListener('mousemove', (e) => {
+    const circles = document.querySelectorAll('.floating-circle');
+    const mouseX = e.clientX / window.innerWidth;
+    const mouseY = e.clientY / window.innerHeight;
+    circles.forEach((circle, index) => {
+        const speed = (index + 1) * 0.5;
+        const x = (mouseX - 0.5) * speed * 20;
+        const y = (mouseY - 0.5) * speed * 20;
+        circle.style.transform = `translate(${x}px, ${y}px)`;
     });
-    // Intersection Observer for animation triggers
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry
-                    .target
-                    .style
-                    .animationPlayState = 'running';
-            }
-        });
-    }, observerOptions);
-    document.querySelectorAll('.team-member').forEach(member => {
-        observer.observe(member);
+});
+// Intersection Observer for animation triggers
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry
+                .target
+                .style
+                .animationPlayState = 'running';
+        }
     });
+}, observerOptions);
+document.querySelectorAll('.team-member').forEach(member => {
+    observer.observe(member);
+});
 </script>
 </body>
 </html>
