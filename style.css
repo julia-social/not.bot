@@ -488,6 +488,18 @@ body {
   font-weight: var(--font-weight-bold);
 }
 
+.store-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.platform-ios #android-store-btn,
+.platform-android #ios-store-btn {
+  display: none;
+}
+
 .app-store-link {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -498,8 +510,14 @@ body {
 }
 
 .app-store-link img {
-  height: 80px;
-  width: 230px;
+  height: 60px;
+  width: 180px;
+  object-fit: contain;
+}
+
+.google-play-link img {
+  height: 60px;
+  width: 180px;
   object-fit: contain;
 }
 
@@ -1209,7 +1227,15 @@ body {
     max-width: 350px;
   }
 
-  .app-store-link img {
+  .store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+  .app-store-link img,
+  .google-play-link img {
     height: 60px;
     width: 172px;
   }

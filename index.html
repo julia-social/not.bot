@@ -30,6 +30,7 @@
 
      
  <script defer data-domain="not.bot" src="https://analytics.not.bot/js/script.js"></script>
+ <script>var ua=navigator.userAgent;if(/iPad|iPhone|iPod/.test(ua))document.documentElement.classList.add('platform-ios');else if(/Android/.test(ua))document.documentElement.classList.add('platform-android');</script>
 </head>
 <body>
     <!-- Navigation -->
@@ -99,9 +100,14 @@
                         <strong class="brand-notbot">not.bot</strong>
                         gives you a digital signature that shows you're human - not just another bot.
                     </p>
-                    <a href="https://apps.apple.com/us/app/not-bot/id6504499953" class="app-store-link" target="_blank">
-                        <img src="/img/app-store-download.svg" alt="Download on the App Store"/>
-                    </a>
+                    <div class="store-buttons">
+                        <a href="https://apps.apple.com/us/app/not-bot/id6504499953" class="app-store-link" id="ios-store-btn" target="_blank">
+                            <img src="/img/app-store-download.svg" alt="Download on the App Store"/>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=social.julia.notbot.app" class="app-store-link google-play-link" id="android-store-btn" target="_blank">
+                            <img src="/img/get-it-on-google-play.svg" alt="Get it on Google Play"/>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-right-column">
                     <div class="hero-benefits">
